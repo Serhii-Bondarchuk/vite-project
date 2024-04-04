@@ -1,0 +1,5 @@
+:root {
+  --color-primary: #37a3e2;
+  --color-secondary: rgb(212, 111, 111);
+  --box-shadow-sm: 0px 5px 5px rgba(0, 0, 0, 0.2);
+}
