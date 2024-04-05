@@ -39,3 +39,7 @@
   cursor: grab;
   user-select: none;
 }
+
+.margin-bottom20{
+margin-bottom: var(--margin-bottom20);
+}

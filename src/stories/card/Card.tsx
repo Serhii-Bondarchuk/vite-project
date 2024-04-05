@@ -1,6 +1,7 @@
 import { ReactNode } from 'react'
 import './Card.css'
 import classNames from 'classnames'
+import { CSSProperties } from 'react'
 
 export type CardType = {
   children?: ReactNode
@@ -10,16 +11,20 @@ export type CardType = {
   isClickable?: boolean
   isDragable?: boolean
   onClick?: () => void
+  styles?: CSSProperties
+  title?: string
 }
 
 export const Card = ({
   children,
-  color,
+  color='primary',
   size,
   className,
   isClickable,
   isDragable,
   onClick,
+  styles,
+  title,
 }: CardType) => {
   return (
     <div
@@ -31,7 +36,9 @@ export const Card = ({
         'is-dragable': isDragable,
       })}
       onClick={onClick}
+      style={styles}
     >
+      <p>{title}</p>
       {children}
     </div>
   )
