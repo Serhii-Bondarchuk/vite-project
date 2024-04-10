@@ -1,0 +1,153 @@
+{
+  "v": 4,
+  "entries": {
+    "configure-your-project--docs": {
+      "id": "configure-your-project--docs",
+      "title": "Configure your project",
+      "name": "Docs",
+      "importPath": "./src/stories/Configure.mdx",
+      "storiesImports": [],
+      "type": "docs",
+      "tags": ["unattached-mdx", "docs"]
+    },
+    "example-button--docs": {
+      "id": "example-button--docs",
+      "title": "Example/Button",
+      "name": "Docs",
+      "importPath": "./src/stories/button/Button.stories.ts",
+      "type": "docs",
+      "tags": ["autodocs", "docs"],
+      "storiesImports": []
+    },
+    "example-button--large": {
+      "type": "story",
+      "id": "example-button--large",
+      "name": "Large",
+      "title": "Example/Button",
+      "importPath": "./src/stories/button/Button.stories.ts",
+      "tags": ["autodocs", "story"]
+    },
+    "example-button--primary": {
+      "type": "story",
+      "id": "example-button--primary",
+      "name": "Primary",
+      "title": "Example/Button",
+      "importPath": "./src/stories/button/Button.stories.ts",
+      "tags": ["autodocs", "story"]
+    },
+    "example-button--secondary": {
+      "type": "story",
+      "id": "example-button--secondary",
+      "name": "Secondary",
+      "title": "Example/Button",
+      "importPath": "./src/stories/button/Button.stories.ts",
+      "tags": ["autodocs", "story"]
+    },
+    "example-button--small": {
+      "type": "story",
+      "id": "example-button--small",
+      "name": "Small",
+      "title": "Example/Button",
+      "importPath": "./src/stories/button/Button.stories.ts",
+      "tags": ["autodocs", "story"]
+    },
+    "example-button--warning": {
+      "type": "story",
+      "id": "example-button--warning",
+      "name": "Warning",
+      "title": "Example/Button",
+      "importPath": "./src/stories/button/Button.stories.ts",
+      "tags": ["autodocs", "story"]
+    },
+    "example-card--docs": {
+      "id": "example-card--docs",
+      "title": "Example/Card",
+      "name": "Docs",
+      "importPath": "./src/stories/card/Card.stories.tsx",
+      "type": "docs",
+      "tags": ["autodocs", "docs"],
+      "storiesImports": []
+    },
+    "example-card--clickable": {
+      "type": "story",
+      "id": "example-card--clickable",
+      "name": "Clickable",
+      "title": "Example/Card",
+      "importPath": "./src/stories/card/Card.stories.tsx",
+      "tags": ["autodocs", "story"]
+    },
+    "example-card--colors": {
+      "type": "story",
+      "id": "example-card--colors",
+      "name": "Colors",
+      "title": "Example/Card",
+      "importPath": "./src/stories/card/Card.stories.tsx",
+      "tags": ["autodocs", "story"]
+    },
+    "example-card--default": {
+      "type": "story",
+      "id": "example-card--default",
+      "name": "Default",
+      "title": "Example/Card",
+      "importPath": "./src/stories/card/Card.stories.tsx",
+      "tags": ["autodocs", "story"]
+    },
+    "example-card--dragable": {
+      "type": "story",
+      "id": "example-card--dragable",
+      "name": "Dragable",
+      "title": "Example/Card",
+      "importPath": "./src/stories/card/Card.stories.tsx",
+      "tags": ["autodocs", "story"]
+    },
+    "example-card--sizes": {
+      "type": "story",
+      "id": "example-card--sizes",
+      "name": "Sizes",
+      "title": "Example/Card",
+      "importPath": "./src/stories/card/Card.stories.tsx",
+      "tags": ["autodocs", "story"]
+    },
+    "example-header--docs": {
+      "id": "example-header--docs",
+      "title": "Example/Header",
+      "name": "Docs",
+      "importPath": "./src/stories/header/Header.stories.ts",
+      "type": "docs",
+      "tags": ["autodocs", "docs"],
+      "storiesImports": []
+    },
+    "example-header--logged-in": {
+      "type": "story",
+      "id": "example-header--logged-in",
+      "name": "Logged In",
+      "title": "Example/Header",
+      "importPath": "./src/stories/header/Header.stories.ts",
+      "tags": ["autodocs", "story"]
+    },
+    "example-header--logged-out": {
+      "type": "story",
+      "id": "example-header--logged-out",
+      "name": "Logged Out",
+      "title": "Example/Header",
+      "importPath": "./src/stories/header/Header.stories.ts",
+      "tags": ["autodocs", "story"]
+    },
+    "example-page--logged-in": {
+      "type": "story",
+      "id": "example-page--logged-in",
+      "name": "Logged In",
+      "title": "Example/Page",
+      "importPath": "./src/stories/pages/mainPage/Page.stories.ts",
+      "tags": ["play-fn", "story"]
+    },
+    "example-page--logged-out": {
+      "type": "story",
+      "id": "example-page--logged-out",
+      "name": "Logged Out",
+      "title": "Example/Page",
+      "importPath": "./src/stories/pages/mainPage/Page.stories.ts",
+      "tags": ["story"]
+    }
+  }
+}
