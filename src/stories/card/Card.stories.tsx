@@ -1,7 +1,7 @@
-import type { Meta } from '@storybook/react'
-import { fn } from '@storybook/test'
-import { Card, CardType } from './Card'
-import { options } from './constants'
+import type { Meta } from '@storybook/react';
+import { fn } from '@storybook/test';
+import { Card, CardType } from './Card';
+import { options } from './constants';
 
 // More on how to set up stories at: https://storybook.js.org/docs/writing-stories#default-export
 const meta = {
@@ -15,7 +15,6 @@ const meta = {
   tags: ['autodocs'],
   // More on argTypes: https://storybook.js.org/docs/api/argtypes
   argTypes: {
-    // backgroundColor: { control: 'color' },
     color: {
       description: '**options:**',
       table: {
@@ -48,42 +47,42 @@ const meta = {
     children: 'This is default',
   },
   // decorators: [(Story) => <div>This decorators<Story />  </div>]
-} satisfies Meta<typeof Card>
+} satisfies Meta<typeof Card>;
 
-export default meta
+export default meta;
 
-const Template = (args: CardType) => <Card {...args} />
+const Template = (args: CardType) => <Card {...args} />;
 
-export const Default = Template.bind({})
-export const Clickable = Template.bind({})
+export const Default = Template.bind({});
+export const Clickable = Template.bind({});
 
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-expect-error
 Clickable.args = {
   isClickable: true,
-}
-export const Dragable = Template.bind({})
+};
+export const Dragable = Template.bind({});
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-expect-error
 Dragable.args = {
   isDragable: true,
-}
+};
 
 const convertType = Object.keys(options).map((keyOption: string) => {
   const arr = options[keyOption as keyof typeof options].map((item) => {
-    return [{ [keyOption]: item }]
-  })
+    return [{ [keyOption]: item }];
+  });
 
-  return arr.flat()
-})
+  return arr.flat();
+});
 
 const ListTemplate = ({ items, ...args }: { items: typeof convertType }) => {
   return items.map((item, index) => {
-    return <Card key={index} {...args} {...item} />
-  })
-}
+    return <Card key={index} {...args} {...item} />;
+  });
+};
 
-export const Colors = ListTemplate.bind({})
+export const Colors = ListTemplate.bind({});
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-expect-error
 Colors.args = {
@@ -91,9 +90,9 @@ Colors.args = {
     color,
     children: `${color}`,
   })),
-}
+};
 
-export const Sizes = ListTemplate.bind({})
+export const Sizes = ListTemplate.bind({});
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-expect-error
 Sizes.args = {
@@ -102,6 +101,6 @@ Sizes.args = {
     children: `${size}`,
     color: 'primary',
   })),
-}
+};
 
 // More on writing stories with args: https://storybook.js.org/docs/writing-stories/args

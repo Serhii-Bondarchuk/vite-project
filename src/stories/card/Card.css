@@ -9,6 +9,14 @@
   transition: box-shadow 0.2s ease-in;
 }
 
+.card:active {
+  box-shadow: none;
+}
+
+.card:hover {
+  opacity: var(--opacity-08);
+}
+
 .color-primary {
   color: white;
   background-color: var(--color-primary);
@@ -40,6 +48,6 @@
   user-select: none;
 }
 
-.margin-bottom20{
-margin-bottom: var(--margin-bottom20);
+.margin-bottom20 {
+  margin-bottom: var(--margin-bottom20);
 }
